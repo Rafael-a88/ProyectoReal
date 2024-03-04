@@ -1,0 +1,189 @@
+body{
+    background-image: linear-gradient(to bottom, #070707,#133c28);
+    
+}
+
+p{
+    color: aliceblue;
+    font-size: 5vh;
+    
+}
+
+.button-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.button-with-icon svg {
+    margin-left: 1vh; /* Espacio entre la palabra y el ícono */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    background-color: rgb(88, 89, 90);
+}
+
+.header-container p {
+    margin-left: 40vh;
+}
+
+#boton1{
+    margin-left: 7em;
+    background-color: greenyellow;
+    font-size: 2vh;
+    border-radius: 15px;
+    
+}
+
+#boton2{
+    margin-left: 3vh;
+    background-color: greenyellow;
+    font-size: 2vh;
+    border-radius: 15px;
+}
+
+.titulo{
+    display: grid;
+    text-align: center;
+    margin-left: 10vh; 
+}
+
+h3{
+    margin-top: -2em;
+}
+
+.timecode {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%;
+}
+
+.timecode::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+}
+
+.mundo{
+    color: greenyellow;    
+}
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
+    grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
+    gap: 250px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */  
+    max-width: 1250px; /* Ancho m%C3%A1ximo del contenedor */
+    
+   
+}
+
+.imagen-container {
+    
+    background-color: rgba(255, 255, 251, 0.799);
+    margin-top: 1vh;
+    height: 300px;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.imagen-container img {
+    width: 90%;
+    height: 80%;
+    margin-top: 1vh;
+    border: 2px solid rgb(119, 66, 66);
+    border-radius: 15px;
+}
+
+.conImagen{
+    height: 80%;
+}
+
+.Cursos{
+    color: aliceblue;
+    margin-left: 50px;
+    margin-top: 30px;
+ 
+}
+
+h4{
+    margin-top: -1px;
+}
+
+#myFooter {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(88, 89, 90);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.code{
+    text-align: left;
+    margin-left: 4vh;
+}
+
+.timecode2::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+    
+}
+
+.desbloquea{
+    font-size: 2vh;
+}
+
+.suscripcion{
+    text-align: right;
+    margin-right: 15vh;
+    margin-top: 10vh;
+   
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -150px;
+    margin-right: -200px;
+}
+
+.newsletter::after {
+    content: " Newsletter";
+    color: greenyellow;
+}
+
+.titulo2 {
+    display: grid;
+    text-align: center;
+    margin-left: 40vh;
+}
+
+.timecode2 {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%; /* Margen superior */
+}
+
+.mundo2 {
+    color: greenyellow;
+}
+
+.mititulo {
+    font-size: 5vh; /* Tamaño de la fuente */
+    color: aliceblue; /* Color del texto */
+    margin-top: 1em; /* Ajuste del margen superior */
+    
+}
