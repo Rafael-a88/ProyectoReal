@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-image: linear-gradient(to bottom, #070707,#133c28);
+    
 }
 
 p{
@@ -22,7 +23,7 @@ p{
     margin-left: 3vh;
     margin-right: 3vh;
     margin-top: 3vh;
-    background-color: rgb(88, 89, 90);
+    background-color: rgba(88, 89, 90, 0.6);
 }
 
 .header-container p {
@@ -75,16 +76,14 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
     grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
-    gap: 250px;
+    gap: 30vh;
     margin: 0 auto; /* Centra el contenedor horizontalmente */  
-    max-width: 1250px; /* Ancho m%C3%A1ximo del contenedor */
-    
-   
+    max-width: 120vh; /* Ancho maximo del contenedor */
 }
 
 .imagen-container {
     
-    background-color: rgba(255, 255, 251, 0.799);
+    background-color: rgba(255, 255, 251, 0.7);
     margin-top: 1vh;
     height: 300px;
     width: 400px;
@@ -122,7 +121,7 @@ h4{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(88, 89, 90);
+    background-color: rgba(88, 89, 90, 0.6);
     color: white;
     text-align: center;
     padding: 30px;
