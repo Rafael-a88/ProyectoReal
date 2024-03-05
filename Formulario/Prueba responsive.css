@@ -1,0 +1,14 @@
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr); /* Cambiar a 2 columnas en pantallas más pequeñas */
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .grid-container {
+            grid-template-columns: repeat (1,1fr); /* Cambiar a una sola columna en pantallas aún más pequeñas */
+            width: 100%;
+        }
+    }

@@ -21,14 +21,15 @@ p{
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 3vh;
     margin-right: 3vh;
     margin-top: 3vh;
-    background-color: rgb(88, 89, 90);
+    background-color: rgba(88, 89, 90, 0.6);
 }
 
 .header-container p {
-    margin-left: 40vh;
+    margin-left: 30vh;
 }
 
 #boton1{
@@ -77,9 +78,9 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
     grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
-    gap: 250px;
+    gap: 35vh;
     margin: 0 auto; /* Centra el contenedor horizontalmente */  
-    max-width: 1250px; /* Ancho m%C3%A1ximo del contenedor */
+    max-width: 180vh; /* Ancho maximo del contenedor */
     
    
 }
@@ -168,7 +169,8 @@ h4{
 .titulo2 {
     display: grid;
     text-align: center;
-    margin-left: 40vh;
+    margin-left: 30vh;
+    margin-right: 10vh;
 }
 
 .timecode2 {
@@ -186,4 +188,45 @@ h4{
     color: aliceblue; /* Color del texto */
     margin-top: 1em; /* Ajuste del margen superior */
     
+}
+
+.inicio{
+    position: relative;
+    left: 49%;
+    right: 51%;
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        
+    }
+
+
+    .timecode,
+    .timecode2 {
+        margin-bottom: 40px;
+        
+    }
+
+    
+    .timecode2,
+    .mundo2 {
+        margin-right: 20vh;
+        white-space: nowrap;
+    }
+
+    .mititulo{
+        margin-right: 40vh;
+        white-space: nowrap;
+    }
+
+    .timecode,
+    .mundo {
+        margin-right:10vh;
+        white-space: nowrap;
+    }
+
+
 }
