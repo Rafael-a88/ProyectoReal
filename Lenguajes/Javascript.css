@@ -1,7 +1,7 @@
 body{
-    background-image: linear-gradient(to bottom, #070707,#133c28);    
+    background-image: linear-gradient(to bottom, #070707,#133c28);
+    
 }
-
 p{
     color: aliceblue;
     font-size: 5vh;
@@ -188,7 +188,6 @@ h4{
     margin-top: 1em; /* Ajuste del margen superior */
     margin-right: 2vh;
     letter-spacing: 5px;
-    
 }
 
 .inicio{
