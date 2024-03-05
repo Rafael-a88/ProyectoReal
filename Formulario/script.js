@@ -42,3 +42,45 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 });
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var emailSignup;
+    var passwordSignup;
+    var nombre;
+    var apellidos;
+
+    document.querySelector('#signup button[type="submit"]').addEventListener('click', function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+
+        emailSignup = document.querySelector('#signup input[type="email"]').value;
+        passwordSignup = document.querySelector('#signup input[type="password"]').value;
+        nombre = document.querySelector('#signup input[placeholder="Nombre"]').value;
+        apellidos = document.querySelector('#signup input[placeholder="Apellidos"]').value;
+
+        alert('Nombre: ' + nombre +'\nApellidos: ' + apellidos + '\nEmail: ' + emailSignup + '\nPassword: ' + passwordSignup );
+
+        // Cambiar a la pestaña de Log In
+        document.querySelector('#login').style.display = 'block';
+        document.querySelector('#signup').style.display = 'none';
+        
+    });
+
+    document.querySelector('#login button').addEventListener('click', function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+
+        var emailLogin = document.querySelector('#login input[type="email"]').value;
+        var passwordLogin = document.querySelector('#login input[type="password"]').value;
+
+        if (emailLogin === emailSignup && passwordLogin === passwordSignup) {
+            alert('Acceso Correcto');
+            // Redirigir a la página deseada
+            window.location.href = '../inicio.html';
+        } else if (emailLogin !== emailSignup && passwordLogin === passwordSignup) {
+            alert('Email incorrecto');
+        } else if (emailLogin === emailSignup && passwordLogin !== passwordSignup) {
+            alert('Contraseña incorrecta');
+        } else {
+            alert('Correo y contraseña incorrectos');
+        }
+    });
+});
