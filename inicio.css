@@ -1,7 +1,15 @@
 body{
-    background-image: linear-gradient(to bottom, #070707,#133c28);
-    
+    background-color: black;
 }
+
+ 
+.titulo2 {
+    display: grid;
+    text-align: center;
+    margin-left: 30vh;
+    margin-right: 10vh;
+}
+
 
 p{
     color: aliceblue;
@@ -23,7 +31,8 @@ p{
     margin-left: 3vh;
     margin-right: 3vh;
     margin-top: 3vh;
-    background-color: rgba(88, 89, 90, 0.6);
+    background-color: rgb(88, 89, 90);
+    justify-content: space-between;
 }
 
 .header-container p {
@@ -45,17 +54,15 @@ p{
     border-radius: 15px;
 }
 
-h3{
-    margin-top: -2em;
-}
-
 .titulo{
     display: grid;
     text-align: center;
     margin-left: 10vh; 
 }
 
-
+h3{
+    margin-top: -2em;
+}
 
 .timecode {
     font-size: 6vh; /* Tamaño de la fuente */
@@ -78,14 +85,16 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
     grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
-    gap: 35vh;
+    gap: 250px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */  
-    max-width: 180vh; /* Ancho maximo del contenedor */
+    max-width: 1250px; /* Ancho m%C3%A1ximo del contenedor */
+    
+   
 }
 
 .imagen-container {
     
-    background-color: rgba(255, 255, 251, 0.7);
+    background-color: rgba(255, 255, 251, 0.799);
     margin-top: 1vh;
     height: 300px;
     width: 400px;
@@ -123,7 +132,7 @@ h4{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(88, 89, 90, 0.6);
+    background-color: rgb(88, 89, 90);
     color: white;
     text-align: center;
     padding: 30px;
@@ -162,4 +171,66 @@ h4{
 .newsletter::after {
     content: " Newsletter";
     color: greenyellow;
+}
+
+.menu {
+    
+    list-style-type: none;
+    display: flex;
+    margin-right: 65vh;
+}
+
+.menu li {
+    
+    margin:  10px;
+    font-size: 3vh;
+    margin-right: 1vh;
+    list-style-type: none; 
+    
+}
+
+.menu li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color:rgb(245, 243, 243);
+    
+}
+
+
+.dropdown {
+    position: relative;
+    
+}
+
+.dropdown .submenu {
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding-left: 0;
+}
+
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu{
+    
+
+    background-color: grey;
+    white-space: nowrap;
+    justify-content: end;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+#borde{
+
+    border: 2px solid greenyellow;
+
 }
