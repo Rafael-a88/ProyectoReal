@@ -13,19 +13,18 @@ window.onscroll = function() {
     scrollFunction();
 };
 
-function scrollFunction() {
-    var footer = document.getElementById("myFooter");
-    var scrollHeight = document.documentElement.scrollHeight;
-    var clientHeight = document.documentElement.clientHeight;
-    var scrollPosition = window.scrollY;
+// Funcion para que me lleve al final de la pagina y me muestre el footer, cuando pulse en Contacto
+document.getElementById("contacto").addEventListener("click", function() {
+    window.scrollTo(0, document.body.scrollHeight);
+});
 
-    if (scrollHeight - (scrollPosition + clientHeight) < 30) {
-        footer.style.display = "block"; // Muestra el footer al hacer scroll hacia la parte inferior de la página
-    } else {
-        footer.style.display = "none"; // Oculta el footer al hacer scroll hacia arriba
-    }
-}
+document.querySelectorAll('.conImagen img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        alert('Bienvenido al curso:\n' + this.nextElementSibling.textContent.trim());
+    });
+});
 
+// Función para un alert, cuando te registras a la revista.
 document.getElementById("subscribeBtn").addEventListener("click", function() {
     var email = document.getElementById("emailInput").value;
     if (email.trim() !== "") {
@@ -34,3 +33,4 @@ document.getElementById("subscribeBtn").addEventListener("click", function() {
         alert("Por favor, introduce una dirección de correo válida.");
     }
 });
+

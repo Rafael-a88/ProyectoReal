@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background: linear-gradient(black,black,green);
 }
 
  
@@ -177,12 +177,13 @@ h4{
     
     list-style-type: none;
     display: flex;
-    margin-right: 65vh;
+    margin-right: 29vh;
+    
 }
 
 .menu li {
     
-    margin:  10px;
+    margin:  40px;
     font-size: 3vh;
     margin-right: 1vh;
     list-style-type: none; 
@@ -222,15 +223,33 @@ h4{
 
     background-color: grey;
     white-space: nowrap;
-    justify-content: end;
-
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
+    
 }
 
 
 #borde{
 
     border: 2px solid greenyellow;
+    width: 100%; /* Ajusta el ancho del div */   
+    margin: 0px; /* A%C3%B1ade un margen alrededor del div */    
+    padding: 0px; /* A%C3%B1ade un espacio interno al contenido del div */
+}
 
+.titulo2 {
+    display: grid;
+    text-align: center;
+    margin-left: -30vh;
+   
+}
+
+.timecode2 {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%; /* Margen superior */
+}
+
+.mundo2 {
+    color: greenyellow;
 }

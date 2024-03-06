@@ -4,10 +4,11 @@
 }
 
 body {
-    height: 120vh;
-    background-image: linear-gradient(to bottom, #070707,#133c28);
+    height: 110vh;
+    background: linear-gradient(black,black,green);
     overflow-y: scroll;
 	font-family: 'Poppins', sans-serif;
+	
 }
 
 .header-container {
@@ -42,7 +43,7 @@ body {
 .form {
 	background: #12141d;
 	padding: 40px;
-	max-width: 500px;
+	max-width: 700px;
 	margin: 40px auto;
 	border-radius: 15px;
 	box-shadow: 0 10px 10px 10px rgba(0, 206, 86, 0.3);
