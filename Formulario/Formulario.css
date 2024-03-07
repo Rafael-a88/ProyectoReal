@@ -23,7 +23,6 @@ body {
 }
 
 
-
 .timecode {
     font-size: 10vh; /* Tamaño de la fuente */
     font-weight: bold; /* Negrita */
@@ -37,7 +36,7 @@ body {
 
 .mundo{
     color: greenyellow;  
-    margin-top: -5vh;  
+    margin-top: -3vh;  
 }
 
 .form {

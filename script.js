@@ -2,10 +2,12 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var footer = document.getElementById("myFooter");
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        footer.style.display = "block"; // Muestra el footer al hacer scroll
+    var scrollPosition = window.scrollY ||  document.documentElement.scrollTop;
+
+    if ((window.innerHeight + scrollPosition) >= document.body.offsetHeight) {
+        footer.style.display = "block"; // Muestra el footer al llegar al final de la página
     } else {
-        footer.style.display = "none"; // Oculta el footer al volver arriba
+        footer.style.display = "none"; // Oculta el footer en otras posiciones de scroll
     }
 }
 
