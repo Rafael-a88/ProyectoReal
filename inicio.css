@@ -31,8 +31,10 @@ p{
     margin-left: 3vh;
     margin-right: 3vh;
     margin-top: 3vh;
-    background-color: rgb(88, 89, 90);
     justify-content: space-between;
+    background-color: rgba(90, 144, 114, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */    
 }
 
 .header-container p {
