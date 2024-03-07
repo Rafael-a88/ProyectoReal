@@ -183,60 +183,50 @@ h4{
     
 }
 
-.menu li {
-    
-    margin:  40px;
+ li {
+    position: relative;
+    margin:  10px;
     font-size: 3vh;
-    margin-right: 1vh;
+    margin-right: 15vh;
     list-style-type: none; 
+    
     
 }
 
-.menu li a{
-    margin: 0 10px;
+ a{
+    margin: 10px 0px;
     text-decoration: none;
     color:rgb(245, 243, 243);
     
+   
 }
 
-
-.dropdown {
-    position: relative;
-    
-}
-
-.dropdown .submenu {
-    
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    padding-left: 0;
-}
+ul.submenu{
+margin-left: -3vh;
 
 
-.dropdown:hover .submenu {
-    display: block;
+
 }
 
 .submenu{
     
+    position: absolute;
+   
+    background-color: rgb(90, 144, 114);
+    width: 115%;
+    justify-items: center;
+  
+    display: none;
 
-    background-color: grey;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    
+    padding-left: 10px;
+
 }
 
 
-#borde{
+.dropdown:hover .submenu {
+    display: block; /* no tocar */
 
-    border: 2px solid greenyellow;
-    width: 100%; /* Ajusta el ancho del div */   
-    margin: 0px; /* A%C3%B1ade un margen alrededor del div */    
-    padding: 0px; /* A%C3%B1ade un espacio interno al contenido del div */
+    
 }
 
 .titulo2 {
@@ -254,4 +244,15 @@ h4{
 
 .mundo2 {
     color: greenyellow;
+}
+
+
+#sub{
+
+    font-size: 2vh;
+
+    margin: 0%;
+
+    float: left;
+
 }

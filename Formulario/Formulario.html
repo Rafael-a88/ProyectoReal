@@ -8,55 +8,55 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="titulo">
-            <h1 class="timecode">Time</h1>
-            <h3 class="mundo"> Mundo Programación</h3>
-            </div>
-        </div>
-    </header>
-    <div class="form">
-        <ul class="tab-group">
-            <li id="registro" class="tab active"><a href="#signup" style="border-radius: 15px;margin-right:8x;">Registro</a></li>
-            <li id="login2" class="tab "><a href="#login" style="border-radius: 15px;margin-left:8px;">Log In</a></li>
-         </ul>
-    <div class="tab-content">
+<body> <!-- Etiqueta que define el cuerpo del documento HTML -->
+    <header> <!-- Sección de encabezado de la página -->
+        <div class="header-container"> <!-- Contenedor del encabezado con la clase "header-container" -->
+            <div class="titulo"> <!-- Contenedor para el título de la página -->
+            <h1 class="timecode">Time</h1> <!--  Encabezado de nivel 1 con la clase "timecode" que muestra el texto "Time" -->
+            <h3 class="mundo"> Mundo Programación</h3> <!-- Encabezado de nivel 3 con la clase "mundo" que muestra el texto "Mundo Programación" -->
+            </div> <!-- Cierra el contenedor "titulo" -->
+        </div> <!-- Cierra el contenedor "header-container" -->
+    </header> <!-- Cierra la sección de encabezado -->
+    <div class="form"> <!-- Contenedor para el formulario de registro e inicio de sesión -->
+        <ul class="tab-group"> <!-- Lista no ordenada con la clase "tab-group" para agrupar pestañas -->
+            <li id="registro" class="tab active"><a href="#signup" style="border-radius: 15px;margin-right:8x;">Registro</a></li> <!-- Pestaña activa para el registro con un enlace al formulario correspondiente -->
+            <li id="login2" class="tab "><a href="#login" style="border-radius: 15px;margin-left:8px;">Log In</a></li> <!-- Pestaña para el inicio de sesión con un enlace al formulario correspondiente -->
+         </ul> <!--  Cierra la lista de pestañas -->
+    <div class="tab-content"> <!-- Contenedor para el contenido de las pestañas -->
         
-        <div id="signup">
-            <h1>Registro</h1>
-            <form action="/" method="post">
-                <div class="top-row">
-                <div class="field-wrap">
-                <input type="text" required placeholder="Nombre" />
-            </div>
-            <div class="field-wrap">
-                <input type="text" required placeholder="Apellidos" />
-            </div>
-        </div>
-        <div class="field-wrap">
-            <input type="email" required placeholder="Dirección Email"/>
-        </div>
-        <div class="field-wrap">
-            <input type="password" required placeholder="Password" />
-        </div>
-            <button type="submit" class="button button-block" />Registro Usuario</button>
-        </form>
-    </div>
-    <div id="login">
-        <h1>¡Bienvenidos a TimeCode!</h1>
-        <form action="/" method="post">
-            <div class="field-wrap">
-                <input type="email" required placeholder="Dirección Email" />
-            </div>
-            <div class="field-wrap">
-                <input type="password" required placeholder="Password" />
-            </div>
-            <button class="button button-block" />Entrar</button>
-        </form>
-      </div>
-    </div>
-  </div> 
-</body>
-</html>
+        <div id="signup"> <!-- Sección del formulario de registro -->
+            <h1>Registro</h1> <!-- Encabezado de nivel 1 para el formulario de registro -->
+            <form action="/" method="post"> <!--  Formulario con acción y método de envío especificados -->
+                <div class="top-row"> <!--  Contenedor para las primeras dos filas del formulario -->
+                <div class="field-wrap"> <!-- Contenedor para un campo de entrada del formulario -->
+                <input type="text" required placeholder="Nombre" /> <!-- Campo de entrada de texto para el nombre -->
+            </div> <!-- Cierra el contenedor del campo de entrada -->
+            <div class="field-wrap"> <!-- Contenedor para otro campo de entrada del formulario -->
+                <input type="text" required placeholder="Apellidos" /> <!-- Campo de entrada de texto para los apellidos -->
+            </div> <!-- Cierra el contenedor del campo de entrada -->
+        </div> <!-- Cierra el contenedor "top-row" -->
+        <div class="field-wrap"> <!-- Campo de entrada de texto para la dirección de correo electrónico -->
+            <input type="email" required placeholder="Dirección Email"/> <!-- Cierra el contenedor del campo de entrada -->
+        </div> <!-- Cierra el contenedor del campo de entrada -->
+        <div class="field-wrap"> <!-- Contenedor para un campo de entrada del formulario -->
+            <input type="password" required placeholder="Password" /> <!-- Campo de entrada de contraseña -->
+        </div> <!-- Cierra el contenedor del campo de entrada -->
+            <button type="submit" class="button button-block" />Registro Usuario</button> <!-- Botón de envío del formulario de registro -->
+        </form> <!-- Cierra el formulario de registro -->
+    </div> <!-- Cierra la sección del formulario de registro -->
+    <div id="login"> <!-- Sección del formulario de inicio de sesión -->
+        <h1>¡Bienvenidos a TimeCode!</h1> <!-- Encabezado de nivel 1 para el formulario de inicio de sesión -->
+        <form action="/" method="post"> <!--  Formulario de inicio de sesión con acción y método de envío especificados -->
+            <div class="field-wrap"> <!-- Contenedor para un campo de entrada del formulario -->
+                <input type="email" required placeholder="Dirección Email" /> <!-- Campo de entrada de texto para la dirección de correo electrónico -->
+            </div> <!-- Cierra el contenedor del campo de entrada -->
+            <div class="field-wrap"> <!-- Contenedor para un campo de entrada del formulario -->
+                <input type="password" required placeholder="Password" /> <!-- Campo de entrada de contraseña -->
+            </div> <!-- Cierra el contenedor del campo de entrada -->
+            <button class="button button-block" />Entrar</button> <!-- Botón de envío del formulario de inicio de sesión -->
+        </form> <!-- Cierra el formulario de inicio de sesión -->
+      </div> <!-- Cierra la sección del formulario de inicio de sesión -->
+    </div> <!-- Cierra el contenedor "tab-content" -->
+  </div>  <!-- Cierra el contenedor "form" -->
+</body> <!-- Cierra la etiqueta de cuerpo -->
+</html> <!-- Cierra la etiqueta HTML -->

@@ -1,9 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300);
- *, *:before, *:after {
-	 box-sizing: border-box;
+@import url(https://fonts.googleapis.com/css?family=Poppins:300); /* Importa la fuente "Poppins" desde Google Fonts con un peso de 300 */
+ *, *:before, *:after {			/* Establece el modelo de caja para todos los elementos y sus pseudo-elementos como "border-box", asegurando que el ancho y alto incluyan el relleno y el borde, no solo el contenido */
+	 box-sizing: border-box; 
 }
 
-body {
+ 
+body {  /* Establece propiedades para el cuerpo de la página, como altura, fondo de degradado lineal, desbordamiento vertical y la fuente 'Poppins' para el texto */
     height: 110vh;
     background: linear-gradient(black,black,green);
     overflow-y: scroll;
@@ -11,35 +12,35 @@ body {
 	
 }
 
-.header-container {
+.header-container { /* Define un contenedor de encabezado con un fondo de color gris semi-transparente */
     background-color: rgba(88, 89, 90, 0.2);
 }
 
 
-.titulo{
+.titulo{ /* Configura el contenedor del título para usar una cuadrícula de diseño y centrar el texto */
     display: grid;
     text-align: center;
  
 }
 
 
-.timecode {
+.timecode { /* Establece el tamaño y la negrita para el elemento con la clase "timecode" */
     font-size: 10vh; /* Tamaño de la fuente */
     font-weight: bold; /* Negrita */
    
 }
 
-.timecode::after {
+.timecode::after { /* Agrega el contenido "Code" después del elemento con la clase "timecode" y le aplica un color verde amarillento */
     content: "Code"; /* Agrega el texto "Code" después de "Time" */
     color: greenyellow; /* Color verde para "Code" */
 }
 
-.mundo{
+.mundo{ /*  Configura el color y el margen superior para el elemento con la clase "mundo" */
     color: greenyellow;  
     margin-top: -3vh;  
 }
 
-.form {
+.form { /*  Define el estilo para el formulario, incluyendo el color de fondo, relleno, ancho máximo, sombra y bordes redondeados */
 	background: #12141d;
 	padding: 40px;
 	max-width: 700px;
@@ -50,18 +51,18 @@ body {
 	height: 70vh;
 }
 
-.tab-group {
+.tab-group { /*  Establece el estilo para un grupo de pestañas, eliminando viñetas y espaciado */
 	list-style: none;
 	padding: 0;
 }
 
-.tab-group:after {
+.tab-group:after { /*  Limpia el flujo de elementos después de un grupo de pestañas utilizando pseudo-elementos */
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.tab-group li a {
+.tab-group li a { /* Define el estilo de las pestañas y enlaces del grupo, incluyendo colores, tamaño de fuente y efectos de transición */
 	display: block;
 	text-decoration: none;
 	padding: 15px;
@@ -75,33 +76,33 @@ body {
 	transition: 0.5s ease;
 }
 
-.tab-group li a:hover {
+.tab-group li a:hover { /*  Oculta el último hijo de "tab-content" (contenido de pestañas) */
 	background: #00a849;
 	color: #000000;
 }
 
-.tab-group .active a {
+.tab-group .active a { /* Añade bordes redondeados y margen al grupo de pestañas */
 	background: #014710;
 	color: #fff;
 }
 
-.tab-content > div:last-child {
+.tab-content > div:last-child { /*  */
 	display: none;
 }
 
-.tab-group{
+.tab-group{ /* Añade bordes redondeados y margen al grupo de pestañas */
     border-radius: 15px!important;
     margin: 20px;
 }
 
-h1 {
+h1 { /* Define el estilo para los encabezados de nivel 1, centrando el texto, estableciendo el color y el peso de la fuente, y aplicando un margen inferior */
 	text-align: center;
 	color: #fff;
 	font-weight: 300;
 	margin: 0 0 40px;
 }
 
-input, textarea {
+input, textarea { /* Establece el estilo para los campos de entrada y áreas de texto, incluyendo tamaño de fuente, color, bordes y transiciones */
 	font-size: 17px;
 	display: block;
 	width: 100%;
@@ -117,28 +118,28 @@ input, textarea {
 
 
 
-.field-wrap {
+.field-wrap { /* Configura el estilo para los contenedores de campos de entrada, estableciendo posición relativa y margen inferior */
 	position: relative;
 	margin-bottom: 40px;
 }
 
-.top-row:after {
+.top-row:after { /*  Limpia el flujo de elementos después de la fila superior de campos de entrada */
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.top-row > div {
+.top-row > div { /*  Establece el estilo para las divisiones de la fila superior, flotando a la izquierda y ajustando el ancho y margen */
 	float: left;
 	width: 48%;
 	margin-right: 4%;
 }
 
-.top-row > div:last-child {
+.top-row > div:last-child { /* Ajusta el margen del último elemento en la fila superior de campos de entrada, estableciéndolo en cero */
 	margin: 0;
 }
 
-.button {
+.button { /* Define el estilo para los botones, incluyendo colores, bordes, tamaño de fuente, y efectos de transición. */
 	border: 0;
 	outline: none;
 	border-radius: 15px;
@@ -153,17 +154,17 @@ input, textarea {
 	-webkit-appearance: none;
 }
 
-.button:hover, .button:focus {
+.button:hover, .button:focus { /* Define el estilo para el botón cuando se coloca el ratón sobre él o cuando está enfocado, cambiando el color de fondo a verde y el color del texto a negro */
 	background: #00a849;
 	color: #000000;
 }
 
-.button-block {
+.button-block { /* Establece el estilo para un botón de tipo bloque, ocupando todo el ancho disponible */
 	display: block;
 	width: 100%;
 }
 
-.forgot {
+.forgot { /* Configura el estilo para los enlaces de "olvidé la contraseña", ajustando el margen superior y alineándolos a la derecha. */
 	margin-top: -20px;
 	text-align: right;
 }
