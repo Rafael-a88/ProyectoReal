@@ -26,7 +26,7 @@ p{
     margin-top: 3vh;
     background-color: rgba(90, 144, 114, 0.4);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); 
 
 }
 
