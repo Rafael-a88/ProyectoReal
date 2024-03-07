@@ -279,6 +279,8 @@ h4{
         gap: 20vh; /* Reduce el espacio entre los elementos */
         justify-content: center;
         margin-top: 5vh;
+        
+       
         }
 
 
@@ -301,6 +303,7 @@ h4{
         
        
     }
+
     
     
 }
