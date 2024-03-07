@@ -235,8 +235,8 @@ h4{
 
     border: 2px solid greenyellow;
     width: 100%; /* Ajusta el ancho del div */   
-    margin: 0px; /* A%C3%B1ade un margen alrededor del div */    
-    padding: 0px; /* A%C3%B1ade un espacio interno al contenido del div */
+    margin: 0px; /* Añadir margen alrededor del div */    
+    padding: 0px; /* Añadir un espacio interno al contenido del div */
 }
 
 .titulo2 {
@@ -254,4 +254,53 @@ h4{
 
 .mundo2 {
     color: greenyellow;
+}
+
+.imagen-container:hover{
+    transform: scale(1.15);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+  
+  }
+
+
+/* Para pantalla de 16 a 27 pulgadas */
+
+@media only screen and (min-width: 1540px) {
+    
+     body {
+            min-height: 120vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+        }
+    
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20vh; /* Reduce el espacio entre los elementos */
+        justify-content: center;
+        margin-top: 5vh;
+        }
+
+
+   
+
+    .Cursos {
+        margin-left: 12vh; 
+        margin-top: 4vh; /* Ajusta el margen superior */
+    }
+
+   
+
+    .menu {
+        margin-right: 40vh; /* Margen derecho del menú */
+    }
+
+    .menu li {
+        margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
+        font-size: 3vh; /* Reduce el tamaño de fuente del menú */
+        
+       
+    }
+    
+    
 }
