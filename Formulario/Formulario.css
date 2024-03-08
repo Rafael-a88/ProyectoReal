@@ -168,7 +168,7 @@ input, textarea {
 	text-align: right;
 }
  
-@media only screen and (min-width: 756px) {
+@media only screen and (max-width: 1024px) {
     
 
 .form {

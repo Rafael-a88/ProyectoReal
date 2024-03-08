@@ -188,14 +188,14 @@ h4{
     font-size: 5vh; /* Tamaño de la fuente */
     color: aliceblue; /* Color del texto */
     margin-top: 1em; /* Ajuste del margen superior */
-    margin-right: 2vh;
+    margin-right: -23vh;
     letter-spacing: 5px;
     
 }
 
 .inicio{
     position: relative;
-    left: 46.5%;
+    left: 48.5%;
     margin-top: -5vh;
 
 }
@@ -210,7 +210,7 @@ h4{
   }
 
 
-
+ /* Para pantalla de 16 a 27 pulgadas */
   @media only screen and (min-width: 1540px) {
     
     body {

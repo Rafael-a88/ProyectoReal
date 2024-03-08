@@ -189,7 +189,7 @@ h4{
     font-size: 5vh; /* Tamaño de la fuente */
     color: aliceblue; /* Color del texto */
     margin-top: 1em; /* Ajuste del margen superior */
-    margin-right: 2vh;
+    margin-right: -2vh;
     letter-spacing: 5px;
     
 }
@@ -209,37 +209,3 @@ h4{
     -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
   
   }
-
-@media screen and (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        
-    }
-
-
-    .timecode,
-    .timecode2 {
-        margin-bottom: 40px;
-        
-    }
-
-    
-    .timecode2,
-    .mundo2 {
-        margin-right: 20vh;
-        white-space: nowrap;
-    }
-
-    .mititulo{
-        margin-right: 40vh;
-        white-space: nowrap;
-    }
-
-    .timecode,
-    .mundo {
-        margin-right:10vh;
-        white-space: nowrap;
-    }
-
-
-}

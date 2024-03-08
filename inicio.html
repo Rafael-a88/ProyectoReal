@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="inicio.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'>
     <script src="script.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -14,33 +16,34 @@
                 <h1 class="timecode">Time</h1>
                 <h3 class="mundo"> Mundo Programación</h3>
             </div>
-           
-           
 
-            <nav>
-                <ul class="menu">
-                    <li class="dropdown">
-                        <a href="#">Lenguajes</a>
-                        <ul class="submenu">
+           <div class="container__menu">
 
-                            <div id="borde"><li><a href="/Lenguajes/Html y Css.html">HTML y CSS</a></li></div>
-                            <div id="borde"><li><a href="/Lenguajes/Java.html">Java</a></li></div>
-                            <div id="borde"><li><a href="/Lenguajes/Javascript.html">Javascript</a></li></div>
-                            <div id="borde"><li><a href="/Lenguajes/Python.html">Python</a></li></div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                    <li><a href="#">Lenguajes</a>
+                        <ul>
+                            <li><a href="/Lenguajes/Html y Css.html">Html y Css</a></li>
+                            <li><a href="/Lenguajes/Java.html">Java</a></li>
+                            <li><a href="/Lenguajes/Javascript.html">JavaScript</a></li>
+                            <li><a href="/Lenguajes/Python.html">Python</a></li>
                         </ul>
                     </li>
                     <li><a href="/Eventos/evento.html">Eventos</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a id="contacto" href="#myFooter">Contacto</a></li>
-                    
-                        
+                    <li><a id="contacto" href="#myFooter">Contacto</a></li>   
                     </li>
-                </ul>
-            </nav>
-            <div class="titulo2">
-                <h1 class="timecode2">Time</h1>
-                <h3 class="mundo2"> Mundo Programación</h3>
-               </div> 
+                    </ul> 
+                    <form class="search">
+                <input type="text" placeholder="Busca tu lenguaje" class="search__input" />
+                <button type="button" class="search__button">
+                  <i class="ri-search-2-line"></i>
+                </button>
+              </form>
+                </nav>
+           
+           
 
         </div>
     </header>
