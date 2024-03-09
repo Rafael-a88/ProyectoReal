@@ -304,3 +304,54 @@ h4{
     
     
 }
+@media only screen and (max-width: 756px) {
+    
+    body {
+           min-height: 120vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+       }
+   
+   .grid-container {
+       grid-template-columns: repeat(2, 2fr); 
+       gap: 5%; /* Reduce el espacio entre los elementos */
+       justify-content: center;
+       margin-top: 5vh;
+       
+       }
+
+
+  
+
+   .Cursos {
+       margin-left: 5%; 
+       margin-top: 4vh; /* Ajusta el margen superior */
+   }
+
+  
+
+   .menu {
+       margin-right: 5%; /* Margen derecho del menú */
+   }
+
+   .menu li {
+       margin-left: 5%; /* Ajusta el espacio entre elementos del menú */
+       font-size: 2.5vh; /* Reduce el tamaño de fuente del menú */
+       
+      
+   }
+   .footer-content {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+}
+#myFooter {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(88, 89, 90);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}}
