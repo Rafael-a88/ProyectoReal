@@ -1,29 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+/*Barra Menu*/
+
+.container__menu{
+    margin-right:17%;
+    height: 200px;
+    padding: 0px 70px;
+  letter-spacing: 2px;
+}
+
+.menu{
+    max-width: 800px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    padding: 54px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    
+}
+
+/* Submenu */
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0,5);
+    position: absolute;
+    border: 1px solid black;
+    top: 150px;
+    left: 15px;
+    padding: 14px 0;
+   visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    background-color: #11751e;
+
+}
+
+nav ul li:hover ul{
+    visibility: visible ;
+    opacity: 1;
+    top: 150px;
+    
+}
+
+nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    top:-70px;
+    left: 60px;
+    border-width: 40px;
+    border-style: solid;  
+    border-color: transparent transparent #11751e transparent;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 23px;
+    padding-left: 34px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: dashed;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    width: 100%;
+}
+
+nav ul li ul li a:hover{
+    background-color: #a1d4a8;
+    color: #0b0789;
+    transform: scale(1.1);
+    font-size: 20px;
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* Body */
+
 body{
     background: linear-gradient(black,black,green);
 }
 
  
-.titulo2 {
-    display: grid;
-    text-align: center;
-    margin-left: 30vh;
-    margin-right: 10vh;
-}
 
-
-p{
-    color: aliceblue;
-    font-size: 3vh;
-}
-
-.button-with-icon {
-    display: flex;
-    align-items: center;
-}
-
-.button-with-icon svg {
-    margin-left: 1vh; /* Espacio entre la palabra y el ícono */
-}
 
 .header-container {
     display: flex;
@@ -32,14 +136,11 @@ p{
     margin-right: 3vh;
     margin-top: 3vh;
     justify-content: space-between;
-    background-color: rgba(90, 144, 114, 0.4);
     border-radius: 10px;
+    background-color: rgba(90, 144, 114, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */    
 }
 
-.header-container p {
-    margin-left: 15vh; /* Espacio entre los elementos */
-}
 
 #boton1{
     margin-left: 7em;
@@ -58,18 +159,19 @@ p{
 
 .titulo{
     display: grid;
-    text-align: center;
     margin-left: 10vh; 
+   
 }
 
 h3{
-    margin-top: -2em;
+   margin-left: 10px;
 }
 
 .timecode {
-    font-size: 6vh; /* Tamaño de la fuente */
+    font-size: 7vh; /* Tamaño de la fuente */
     font-weight: bold; /* Negrita */
-    margin-top: 5%;
+    margin-top: -1%;
+    color: white;
 }
 
 .timecode::after {
@@ -78,7 +180,8 @@ h3{
 }
 
 .mundo{
-    color: greenyellow;    
+    color: greenyellow;  
+    margin-left: 4vh;  
 }
 
 
@@ -87,8 +190,8 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
     grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
-    gap: 250px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */  
+    gap: 260px;
+    margin-left: 13vh;
     max-width: 1250px; /* Ancho m%C3%A1ximo del contenedor */
     
    
@@ -97,7 +200,7 @@ h3{
 .imagen-container {
     
     background-color: rgba(255, 255, 251, 0.799);
-    margin-top: 1vh;
+    margin-top: 7vh;
     height: 300px;
     width: 400px;
     border-radius: 15px;
@@ -175,69 +278,10 @@ h4{
     color: greenyellow;
 }
 
-.menu {
-    
-    list-style-type: none;
-    display: flex;
-    margin-right: 29vh;
-    
-}
-
-.menu li {
-    
-    margin:  40px;
-    font-size: 3vh;
-    margin-right: 1vh;
-    list-style-type: none; 
-    
-}
-
-.menu li a{
-    margin: 0 10px;
-    text-decoration: none;
-    color:rgb(245, 243, 243);
-    
-}
 
 
-.dropdown {
-    position: relative;
-    
-}
-
-.dropdown .submenu {
-    
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    padding-left: 0;
-}
 
 
-.dropdown:hover .submenu {
-    display: block;
-}
-
-.submenu{
-    
-
-    background-color: grey;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    
-}
-
-
-#borde{
-
-    border: 2px solid greenyellow;
-    width: 100%; /* Ajusta el ancho del div */   
-    margin: 0px; /* Añadir margen alrededor del div */    
-    padding: 0px; /* Añadir un espacio interno al contenido del div */
-}
 
 .titulo2 {
     display: grid;
@@ -263,6 +307,50 @@ h4{
     box-shadow: 0px 0px 15px 15px #ffffff;
     -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
   
+}
+
+/* Parte del buscador*/
+
+.search {
+    display: inline-flex;
+    align-items: center;
+    background-image: linear-gradient(40deg, #111, #bec665);
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 55%;
+    
+  }
+  .search :is(input, button) {
+    background: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+  }
+  .search__input {
+    width: 0;
+    transition: width 0.5s;
+  }
+  .search__button {
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: color 0.25s;
+  }
+  .search__button:hover {
+    color: #e3e3e3;
+  }
+  .search:focus-within input {
+    width: 200px;
+  }
+  ::placeholder {
+    font: inherit;
+    color: #e3e3e3;
   }
 
 
@@ -279,10 +367,10 @@ h4{
         gap: 20vh; /* Reduce el espacio entre los elementos */
         justify-content: center;
         margin-top: 5vh;
+        
+       
         }
 
-
-   
 
     .Cursos {
         margin-left: 12vh; 
@@ -301,6 +389,7 @@ h4{
         
        
     }
+
     
     
 }
