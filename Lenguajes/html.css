@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(black,black,green);
+    height: 150vh;
 }
 
 p{
@@ -20,17 +21,17 @@ p{
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-left: 3vh;
     margin-right: 3vh;
     margin-top: 3vh;
+    justify-content: space-between;
     background-color: rgba(90, 144, 114, 0.4);
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
 }
 
 .header-container p {
-    margin-left: 30vh;
+    margin-left: 15vh;
 }
 
 #boton1{
@@ -79,9 +80,9 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
     grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
-    gap: 35vh;
+    gap: 250px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */  
-    max-width: 180vh; /* Ancho maximo del contenedor */
+    max-width: 1250px; /* Ancho maximo del contenedor */
     
    
 }
@@ -188,15 +189,15 @@ h4{
     font-size: 5vh; /* Tamaño de la fuente */
     color: aliceblue; /* Color del texto */
     margin-top: 1em; /* Ajuste del margen superior */
-    margin-right: 2vh;
+    margin-right: -22vh;
     letter-spacing: 5px;
     
 }
 
 .inicio{
     position: relative;
-    left: 46.5%;
-    margin-top: -5vh;
+    left: 48.5%;
+    margin-top: -10vh;
 
 }
 
@@ -210,7 +211,7 @@ h4{
   
   }
 
-
+  /* Para pantalla de 16 a 27 pulgadas */
   @media only screen and (min-width: 1540px) {
     
     body {
@@ -219,10 +220,9 @@ h4{
    
    .grid-container {
        grid-template-columns: repeat(3, 1fr); 
-       gap: 16vh; /* Reduce el espacio entre los elementos */
+       gap: 20vh; /* Reduce el espacio entre los elementos */
        justify-content: center;
-       margin-top: 3vh;
-       margin-left: 15vh;
+       margin-top: 5vh;
        }
 
 
@@ -232,8 +232,28 @@ h4{
    }
 
   
+   
+    .menu {
+    margin-right: 40vh; /* Margen derecho del menú */
+}
 
+    .menu li {
+    margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
+    font-size: 3vh; /* Reduce el tamaño de fuente del menú */
+    
    
+}
+
+   .mititulo{
+    position: relative;
+    font-size: 3vh;
+    left: 9vh;
    
-   
+   }
+
+   a{
+    position: relative;
+    margin-left: 3vh;
+   }
+  
 }
