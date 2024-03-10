@@ -39,6 +39,8 @@ body {
     margin-top: -3vh;  
 }
 
+
+
 .form {
 	background: #12141d;
 	padding: 40px;
@@ -167,9 +169,189 @@ input, textarea {
 	margin-top: -20px;
 	text-align: right;
 }
+
+@media only screen and (max-width: 767px) {
+   
+
+	.form {
+		background: #12141d;
+		padding: 40px;
+		max-width: 700px;
+		margin: 40px auto;
+		border-radius: 15px;
+		box-shadow: 0 10px 10px 10px rgba(0, 206, 86, 0.3);
+		width: 100vh;
+		height: 130vh;
+	}
+	
+	.tab-group {
+		list-style: none;
+		padding: 0;
+	}
+	
+	.tab-group:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.tab-group li a {
+		display: block;
+		text-decoration: none;
+		padding: 15px;
+		background: rgba(160, 179, 176, .25);
+		color: #a0b3b0;
+		font-size: 20px;
+		float: left;
+		width: 48%;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.5s ease;
+	}
+	
+	.tab-group li a:hover {
+		background: #00a849;
+		color: #000000;
+	}
+	
+	.tab-group .active a {
+		background: #014710;
+		color: #fff;
+	}
+	
+	.tab-content > div:last-child {
+		display: none;
+	}
+	
+	.tab-group{
+		border-radius: 15px!important;
+		margin: 20px;
+	}
+	
+	}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   
+
+	.form {
+		background: #12141d;
+		padding: 40px;
+		max-width: 600px;
+		margin: 40px auto;
+		border-radius: 15px;
+		box-shadow: 0 10px 10px 10px rgba(0, 206, 86, 0.3);
+		width: 50%;
+		height: auto;
+	}
+	
+	.tab-group {
+		list-style: none;
+		padding: 0;
+	}
+	
+	.tab-group:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.tab-group li a {
+		display: block;
+		text-decoration: none;
+		padding: 15px;
+		background: rgba(160, 179, 176, .25);
+		color: #a0b3b0;
+		font-size: 20px;
+		float: left;
+		width: 48%;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.5s ease;
+	}
+	
+	.tab-group li a:hover {
+		background: #00a849;
+		color: #000000;
+	}
+	
+	.tab-group .active a {
+		background: #014710;
+		color: #fff;
+	}
+	
+	.tab-content > div:last-child {
+		display: none;
+	}
+	
+	.tab-group{
+		border-radius: 15px!important;
+		margin: 20px;
+	}
+	
+	}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+   
+
+	.form {
+		background: #12141d;
+		padding: 40px;
+		max-width: 800px;
+		margin: 40px auto;
+		border-radius: 15px;
+		box-shadow: 0 10px 10px 10px rgba(0, 206, 86, 0.3);
+		width: 60%;
+		height: auto;
+	}
+	
+	.tab-group {
+		list-style: none;
+		padding: 0;
+	}
+	
+	.tab-group:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.tab-group li a {
+		display: block;
+		text-decoration: none;
+		padding: 15px;
+		background: rgba(160, 179, 176, .25);
+		color: #a0b3b0;
+		font-size: 20px;
+		float: left;
+		width: 48%;
+		text-align: center;
+		cursor: pointer;
+		transition: 0.5s ease;
+	}
+	
+	.tab-group li a:hover {
+		background: #00a849;
+		color: #000000;
+	}
+	
+	.tab-group .active a {
+		background: #014710;
+		color: #fff;
+	}
+	
+	.tab-content > div:last-child {
+		display: none;
+	}
+	
+	.tab-group{
+		border-radius: 15px!important;
+		margin: 20px;
+	}
+	
+	}
  
-@media only screen and (max-width: 1024px) {
-    
+@media only screen and (min-width: 1440px) {
+   
 
 .form {
 	background: #12141d;
@@ -179,7 +361,7 @@ input, textarea {
 	border-radius: 15px;
 	box-shadow: 0 10px 10px 10px rgba(0, 206, 86, 0.3);
 	width: 100vh;
-	height: 130vh;
+	height: auto;
 }
 
 .tab-group {
@@ -225,7 +407,5 @@ input, textarea {
     border-radius: 15px!important;
     margin: 20px;
 }
-
-/* detras del humo no se ve */
 
 }
