@@ -20,18 +20,17 @@ p{
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-left: 3vh;
     margin-right: 3vh;
     margin-top: 3vh;
+    justify-content: space-between;
     background-color: rgba(90, 144, 114, 0.4);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */    
-    
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
 }
 
 .header-container p {
-    margin-left: 30vh;
+    margin-left: 15vh;
 }
 
 #boton1{
@@ -80,9 +79,9 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Cada cuadro tiene 200px de ancho */
     grid-auto-rows: 150px; /* Cada cuadro tiene 150px de alto */
-    gap: 35vh;
+    gap: 250px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */  
-    max-width: 180vh; /* Ancho maximo del contenedor */
+    max-width: 1250px; /* Ancho maximo del contenedor */
     
    
 }
@@ -121,18 +120,7 @@ h4{
     margin-top: -1px;
 }
 
-#myFooter {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(88, 89, 90);
-    color: white;
-    text-align: center;
-    padding: 30px;
 
-}
 
 .code{
     text-align: left;
@@ -145,28 +133,7 @@ h4{
     
 }
 
-.desbloquea{
-    font-size: 2vh;
-}
 
-.suscripcion{
-    text-align: right;
-    margin-right: 15vh;
-    margin-top: 10vh;
-   
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    margin-left: -150px;
-    margin-right: -200px;
-}
-
-.newsletter::after {
-    content: " Newsletter";
-    color: greenyellow;
-}
 
 .titulo2 {
     display: grid;
@@ -189,14 +156,14 @@ h4{
     font-size: 5vh; /* Tamaño de la fuente */
     color: aliceblue; /* Color del texto */
     margin-top: 1em; /* Ajuste del margen superior */
-    margin-right: -2vh;
+    margin-right: -23vh;
     letter-spacing: 5px;
     
 }
 
 .inicio{
     position: relative;
-    left: 46.5%;
+    left: 48.5%;
     margin-top: -5vh;
 
 }
@@ -209,3 +176,55 @@ h4{
     -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
   
   }
+
+
+ /* Para pantalla de 16 a 27 pulgadas */
+  @media only screen and (min-width: 1540px) {
+    
+    body {
+           min-height: 120vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+       }
+   
+   .grid-container {
+       grid-template-columns: repeat(3, 1fr); 
+       gap: 20vh; /* Reduce el espacio entre los elementos */
+       justify-content: center;
+       margin-top: 5vh;
+       }
+
+
+   .Cursos {
+       margin-left: 12vh; 
+       margin-top: 4vh; /* Ajusta el margen superior */
+   }
+
+  
+   
+    .menu {
+    margin-right: 40vh; /* Margen derecho del menú */
+}
+
+    .menu li {
+    margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
+    font-size: 3vh; /* Reduce el tamaño de fuente del menú */
+}
+
+ .inicio{
+        position: relative;
+        left: 46%;
+        margin-top: -5vh;
+    
+    }
+   .mititulo{
+    position: relative;
+    font-size: 3vh;
+    left: -4vh;
+   
+   }
+
+   a{
+    position: relative;
+    margin-left: 3vh;
+   }
+  
+}

@@ -172,16 +172,21 @@ input, textarea {
 
 @media only screen and (max-width: 767px) {
    
+	.timecode {
+		font-size: 8vh; /* Tamaño de la fuente */
+		font-weight: bold; /* Negrita */
+	   
+	}
 
 	.form {
 		background: #12141d;
 		padding: 40px;
-		max-width: 700px;
-		margin: 40px auto;
+		max-width: 400px;
+		
 		border-radius: 15px;
 		box-shadow: 0 10px 10px 10px rgba(0, 206, 86, 0.3);
-		width: 100vh;
-		height: 130vh;
+		width: 100%;
+		height: 80%;
 	}
 	
 	.tab-group {

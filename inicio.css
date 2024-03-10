@@ -6,19 +6,18 @@
 }
 
 
-
-
 /*Barra Menu*/
 
 .container__menu{
     margin-right:17%;
     height: 200px;
     padding: 0px 70px;
-  letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 .menu{
-    max-width: 800px;
+  
+    max-width: 100%;
     margin: auto;
     height: 100%;
 }
@@ -220,6 +219,14 @@ h3{
     height: 80%;
 }
 
+.imagen-container:hover{
+    transform: scale(1.15);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+  
+}
 .Cursos{
     color: aliceblue;
     margin-left: 50px;
@@ -243,6 +250,15 @@ h4{
     padding: 30px;
 
 }
+
+#emailInput::placeholder {
+    color:crimson;
+}
+
+#emailInput {
+    color:crimson;
+}
+
 
 .code{
     text-align: left;
@@ -280,9 +296,6 @@ h4{
 
 
 
-
-
-
 .titulo2 {
     display: grid;
     text-align: center;
@@ -300,14 +313,6 @@ h4{
     color: greenyellow;
 }
 
-.imagen-container:hover{
-    transform: scale(1.15);
-    border-radius: 50px;
-    transition: all .8s ease-in-out;
-    box-shadow: 0px 0px 15px 15px #ffffff;
-    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
-  
-}
 
 /* Parte del buscador*/
 
@@ -319,9 +324,8 @@ h4{
     padding: 15px;
     border-radius: 4px;
     border: 1px solid #fff;
-    position: absolute;
-    margin-top: -8%;
-    margin-left: 55%;
+    margin-top: -58%;
+    margin-left: 50%;
     
   }
   .search :is(input, button) {
@@ -358,81 +362,155 @@ h4{
 
 @media only screen and (min-width: 1540px) {
     
-     body {
-            min-height: 120vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
-        }
-    
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 20vh; /* Reduce el espacio entre los elementos */
-        justify-content: center;
-        margin-top: 5vh;
-        
-       
-        }
 
 
-    .Cursos {
-        margin-left: 12vh; 
-        margin-top: 4vh; /* Ajusta el margen superior */
-    }
-
+    body {
+           min-height: 140vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+          
+       }
    
 
-    .menu {
-        margin-right: 40vh; /* Margen derecho del menú */
-    }
-
-    .menu li {
-        margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
-        font-size: 3vh; /* Reduce el tamaño de fuente del menú */
-        
-       
-    }
-
-    
-    
-}
-@media only screen and (max-width: 756px) {
-    
-    body {
-           min-height: 120vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
-       }
    
    .grid-container {
-       grid-template-columns: repeat(2, 2fr); 
-       gap: 5%; /* Reduce el espacio entre los elementos */
+       display: grid;
+       grid-template-columns: repeat(3, 1fr); 
+       gap: 20vh; /* Reduce el espacio entre los elementos */
        justify-content: center;
-       margin-top: 5vh;
-       
+       margin-top: 1vh;
+       margin-left: 38vh;
        }
 
 
-  
-
    .Cursos {
-       margin-left: 5%; 
+       margin-left: 12vh; 
        margin-top: 4vh; /* Ajusta el margen superior */
    }
 
   
-
-   .menu {
-       margin-right: 5%; /* Margen derecho del menú */
+   #len{
+    margin-right: 7vh;
    }
+  
 
-   .menu li {
-       margin-left: 5%; /* Ajusta el espacio entre elementos del menú */
-       font-size: 2.5vh; /* Reduce el tamaño de fuente del menú */
-       
-      
+
+   a{
+   margin-right: 4vh;
+   
    }
-   .footer-content {
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
+  
+
+nav ul li ul li {
+    width: 100%; /* Asegura que el li ocupe todo el ancho disponible */
 }
-#myFooter {
+
+nav ul li ul li a {
+    color: rgb(0, 0, 0);
+    padding: 23px;
+    padding-left: 44px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: dashed;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    width: 100%;
+}
+
+nav ul li ul li:hover {
+    background-color: #a1d4a8; /* Aplica el color de fondo al li en hover */
+}
+
+nav ul li ul li a:hover {
+    color: #0b0789;
+    transform: scale(1.2);
+    font-size: 20px;
+}
+
+.search {
+    display: inline-flex;
+    align-items: center;
+    background-image: linear-gradient(40deg, #111, #bec665);
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    position: absolute;
+    margin-top: -7%;
+    margin-left: 55%;
+    
+  }
+
+}
+
+    
+/* Para Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    body {
+           min-height: 220vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+          
+       }
+
+        .header-container {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+    
+       }
+   
+      
+       .timecode {
+           font-size: 34px;
+           margin-left: 50px;
+       }
+   
+       .mundo {
+           font-size: 13px;
+           margin-left: 8vh;
+           white-space: nowrap;
+       }
+   
+   
+       nav ul {
+           display: flex;
+       }
+   
+       nav ul li {
+           padding: 0 15px;
+       }
+   
+       nav ul li a {
+           padding: 10px;
+           font-size: 16px;
+       }
+   
+    
+    .titulo {
+        margin-left: 1vh; /* Ajusta el margen izquierdo */
+        padding: 0;
+    }
+
+   .header-container {
+           margin-left: 2vh; /* Ajusta el margen izquierdo */
+           margin-right: 2vh; /* Ajusta el margen derecho */
+       }
+
+   .grid-container {
+       grid-template-columns: repeat(2, 1fr); 
+       gap: 5%; /* Reduce el espacio entre los elementos */
+       row-gap: 50%;
+       justify-content: center;
+       margin-top: 5vh;
+       margin-right: 12vh;
+       
+    }
+
+   .footer-content {
+   
+    margin-left: -90px;
+    }
+
+    #myFooter {
     display: none; /* Inicialmente oculto */
     position: fixed;
     left: 0;
@@ -442,5 +520,211 @@ h4{
     color: white;
     text-align: center;
     padding: 30px;
+    }
 
-}}
+    .search {
+        display: inline-flex;
+        align-items: center;
+        background-image: linear-gradient(40deg, #111, #bec665);
+        color: #fff;
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        position: relative;
+        margin: 15px;
+        margin-left: 28%;
+      }
+     
+      
+      
+}
+
+
+/* Para movil */
+
+@media only screen and (max-width: 767px) {
+
+
+    body {
+        min-height: 360vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+    }
+
+     .header-container {
+  
+        width: 90%;
+        height: 47vh;
+    }
+
+    .titulo{
+        position: absolute;
+        margin-top: -250px;
+        left: 120px;   
+    }
+
+
+    .timecode {
+        font-size: 50px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+
+    .mundo {
+        font-size: 18px;
+        margin-left: 3vh;
+        white-space: nowrap;
+    }
+
+nav > ul {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    
+}
+
+nav ul li {
+    margin: 0; /* Elimina todo el margen alrededor de los elementos de la lista */
+}
+
+nav > ul > li > a {
+    padding: 10px; /* Ajusta el relleno para reducir el espacio entre elementos */
+    margin: 10px 0; /* Aplica un margen vertical de 10px entre los elementos */
+    font-size: 18px; /* Tamaño de fuente ajustado para mejor legibilidad */
+    margin-left: 80px;
+}
+nav ul li:first-child {
+    margin-top: 30px; /* Ajusta el margen superior solo para el primer elemento */
+}
+ 
+ .titulo {
+     margin-left: 1vh; /* Ajusta el margen izquierdo */
+     padding: 0;
+ }
+
+.header-container {
+        margin-left: 2vh; /* Ajusta el margen izquierdo */
+        margin-right: 2vh; /* Ajusta el margen derecho */
+    }
+
+.grid-container {
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20%;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-right: 13vh;
+    
+ }
+
+ .Cursos {
+   
+    margin-top: 15vh; /* Ajusta el margen superior */
+    margin-left: 25%;
+}
+
+.footer-content {
+
+ margin-left: -90px;
+ }
+
+ #myFooter {
+ display: none; /* Inicialmente oculto */
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: rgb(88, 89, 90);
+ color: white;
+ text-align: center;
+ padding: 30px;
+ }
+
+ .search {
+     display: flex;
+     background-image: linear-gradient(40deg, #111, #bec665);
+     color: #fff;
+     padding: 10px;
+     border-radius: 4px;
+     border: 1px solid #fff;
+     position: relative;
+     margin-top: 110px; /* Ajusta el margen superior según sea necesario */
+     margin-left: 10%; /* Ajusta el margen izquierdo según sea necesario */
+     margin-right: -80px;
+     max-width: 330px; /* Asegura que el elemento no se desborde */
+ }
+ 
+ .search__input {
+     width: 100%;
+     transition: all;
+ }
+ 
+ .search__button {
+     display: grid;
+     place-items: center;
+     width: 25px;
+     height: 25px;
+     cursor: pointer;
+     transition: color 0.25s;
+ }
+ 
+ .search__button:hover {
+     color: #e3e3e3;
+ }
+ 
+ .search:focus-within input {
+     width: 110px;
+ }
+
+ .imagen-container {
+    
+    background-color: rgba(255, 255, 251, 0.799);
+    margin-top: 3vh;
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+   
+.imagen-container:hover{
+    transform: scale(1.10);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+  
+}
+
+.footer-content {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos en la columna */
+        margin-left: -5%; /* Elimina el margen izquierdo */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    .suscripcion {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-top: 5vh; /* Ajusta el margen superior según sea necesario */
+    }
+
+    input{
+        margin-right: 9vh;
+    }
+
+    .titulo2 {
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    .timecode2{
+        margin-left: 20%;
+    }
+
+    .bi-geo-alt-fill,
+.bi-telephone,
+.bi-envelope-at-fill {
+    margin-left: 25%; /* Ajusta el margen izquierdo para desplazar hacia la derecha */
+}
+}
+
+.listado{
+ 
+    margin-left: 16%;
+    margin-top: -26%;
+}
