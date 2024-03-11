@@ -414,7 +414,7 @@ h4{
     top: 145px;
     left: 15px;
     padding: 14px 0;
-   visibility: hidden;
+    visibility: hidden;
     opacity: 0;
     z-index: 1;
     background-color: #11751e;
@@ -446,8 +446,6 @@ nav ul li ul::before{
 nav ul li ul li a{
     display: block;
     color: rgb(0, 0, 0);
-    padding: 23px;
-    padding-left: 34px;
     margin-top: 10px;
     font-size: 18px;
     text-decoration: dashed;
@@ -461,10 +459,15 @@ nav ul li ul li a:hover{
     color: #0b0789;
     transform: scale(1.1);
     font-size: 20px;
-    padding-left: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  
+  
+
 }
+
+nav ul li ul li {
+    width: 100%; /* Asegura que el li ocupe todo el ancho disponible */
+}
+
 .search {
     display: inline-flex;
     align-items: center;
