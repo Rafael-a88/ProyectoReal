@@ -202,14 +202,14 @@ h4{
    
     .menu {
     margin-right: 40vh; /* Margen derecho del menú */
-}
+    }
 
     .menu li {
     margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
     font-size: 3vh; /* Reduce el tamaño de fuente del menú */
-}
+    }
 
- .inicio{
+    .inicio{
         position: relative;
         left: 46%;
         margin-top: -5vh;
@@ -228,47 +228,45 @@ h4{
    }
 
     }
+
+    /* Para movil */
    @media only screen and (max-width: 767px) {
     body {
         min-height: 280vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
     }
 
-     .header-container {
-  
-        width: 90%;
-        height: 47vh;
-    }
-
-    .titulo{
-        position: absolute;
-        margin-top: -250px;
-        margin-left: 0%; 
-    }
-
-
-    .mundo {
-        font-size: 18px;
-        margin-left: 3vh;
-        white-space: nowrap;
-    }
-
     .header-container {
-            margin-left: 2vh; /* Ajusta el margen izquierdo */
-            margin-right: 2vh; /* Ajusta el margen derecho */
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo, .titulo2 {
+        margin-bottom: 20px;
+        margin-right: 15%;
+    }
+    
+    .mititulo {
+        margin-bottom: 40px;
+        font-size: 3.5vh;
+        margin-right: 20%;
+    }
+
+    .titulo2{
+        margin-right: 48%;
+    }
 
     .grid-container {
         grid-template-columns: repeat(1, 1fr); 
         gap: 20%;
-        
         margin-top: 5vh;
-        margin-left: 12vh;
+        margin-left: 9vh;
         
     }
 
     .Cursos {
         margin-top: 15vh; /* Ajusta el margen superior */
-        margin-left: 28%;
+        margin-left: 20%;
     }
 
     
@@ -294,32 +292,14 @@ h4{
 
    
     .inicio{
-        position: absolute;
-        margin-top: 130%;
+        position: relative;
+        margin-top: 155%;
+        left: 26.5vh;
+
     }
     
-
-    .titulo2 {
-        margin-left: 0; /* Elimina el margen izquierdo */
-        margin-top: 65%;
-        margin-right: 0%;
-    }
-
-    .timecode2{
-        margin-left: 0%;
-    }
-
-    .timecode{
-        margin-top:25%;
-
-   }
 
    
-
-   
-    
-  
-    
 
    }
 
