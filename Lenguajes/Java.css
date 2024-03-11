@@ -120,18 +120,7 @@ h4{
     margin-top: -1px;
 }
 
-#myFooter {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(88, 89, 90);
-    color: white;
-    text-align: center;
-    padding: 30px;
 
-}
 
 .code{
     text-align: left;
@@ -144,28 +133,7 @@ h4{
     
 }
 
-.desbloquea{
-    font-size: 2vh;
-}
 
-.suscripcion{
-    text-align: right;
-    margin-right: 15vh;
-    margin-top: 10vh;
-   
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    margin-left: -150px;
-    margin-right: -200px;
-}
-
-.newsletter::after {
-    content: " Newsletter";
-    color: greenyellow;
-}
 
 .titulo2 {
     display: grid;
@@ -239,14 +207,18 @@ h4{
     .menu li {
     margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
     font-size: 3vh; /* Reduce el tamaño de fuente del menú */
-    
-   
 }
 
+ .inicio{
+        position: relative;
+        left: 46%;
+        margin-top: -5vh;
+    
+    }
    .mititulo{
     position: relative;
     font-size: 3vh;
-    left: 9vh;
+    left: -4vh;
    
    }
 

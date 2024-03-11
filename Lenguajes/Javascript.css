@@ -22,12 +22,11 @@ p{
     align-items: center;
     margin-left: 3vh;
     margin-right: 3vh;
-    margin-top: 3vh; 
+    margin-top: 3vh;
     justify-content: space-between;
     background-color: rgba(90, 144, 114, 0.4);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); 
-
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
 }
 
 .header-container p {
@@ -121,18 +120,7 @@ h4{
     margin-top: -1px;
 }
 
-#myFooter {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(88, 89, 90);
-    color: white;
-    text-align: center;
-    padding: 30px;
 
-}
 
 .code{
     text-align: left;
@@ -145,28 +133,7 @@ h4{
     
 }
 
-.desbloquea{
-    font-size: 2vh;
-}
 
-.suscripcion{
-    text-align: right;
-    margin-right: 15vh;
-    margin-top: 10vh;
-   
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    margin-left: -150px;
-    margin-right: -200px;
-}
-
-.newsletter::after {
-    content: " Newsletter";
-    color: greenyellow;
-}
 
 .titulo2 {
     display: grid;
@@ -189,8 +156,9 @@ h4{
     font-size: 5vh; /* Tamaño de la fuente */
     color: aliceblue; /* Color del texto */
     margin-top: 1em; /* Ajuste del margen superior */
-    margin-right: -24vh;
+    margin-right: -23vh;
     letter-spacing: 5px;
+    
 }
 
 .inicio{
@@ -209,7 +177,8 @@ h4{
   
   }
 
-  /* Para pantalla de 16 a 27 pulgadas */
+
+ /* Para pantalla de 16 a 27 pulgadas */
   @media only screen and (min-width: 1540px) {
     
     body {
@@ -238,14 +207,18 @@ h4{
     .menu li {
     margin-left: 10vh; /* Ajusta el espacio entre elementos del menú */
     font-size: 3vh; /* Reduce el tamaño de fuente del menú */
-    
-   
 }
 
+ .inicio{
+        position: relative;
+        left: 46%;
+        margin-top: -5vh;
+    
+    }
    .mititulo{
     position: relative;
     font-size: 3vh;
-    left: 9vh;
+    left: -4vh;
    
    }
 
