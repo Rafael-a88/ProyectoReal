@@ -1,0 +1,140 @@
+body{
+    background: linear-gradient(black,black,green);  
+}
+
+p{
+    color: rgb(12, 13, 14);
+    font-size: 1vh;
+}
+
+.button-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.button-with-icon svg {
+    margin-left: 1vh; /* Espacio entre la palabra y el ícono */
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    justify-content: space-between;
+    background-color: rgba(90, 144, 114, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 115, 0.855); /* Agrega una sombra al borde */  
+}
+
+.header-container p {
+    margin-left: 15vh;
+}
+
+
+.titulo{
+    display: grid;
+    text-align: center;
+    margin-left: 10vh; 
+}
+
+h3{
+    margin-top: -2em;
+}
+
+.timecode {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%;
+}
+
+.timecode::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+}
+
+.mundo{
+    color: greenyellow;    
+}
+
+.timecode2::after {
+    content: "Code"; /* Agrega el texto "Code" después de "Time" */
+    color: greenyellow; /* Color verde para "Code" */
+    
+}
+
+.titulo2 {
+    display: grid;
+    text-align: center;
+    margin-left: 30vh;
+    margin-right: 10vh;
+}
+
+.timecode2 {
+    font-size: 6vh; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-top: 5%; /* Margen superior */
+}
+
+.mundo2 {
+    color: greenyellow;
+}
+
+.mititulo {
+    font-size: 5vh; /* Tamaño de la fuente */
+    color: aliceblue; /* Color del texto */
+    margin-top: 1em; /* Ajuste del margen superior */
+    margin-right: -23vh;
+    letter-spacing: 5px;
+    
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 25%;
+}
+
+aside, section {
+    width: 33%;
+    height: 33%;
+    margin-left: 1px; /* Espacio entre aside y section */
+    margin-top: 100px;
+}
+
+aside img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+section {
+    background-color: rgb(226, 220, 163);
+    width: 50%;
+    height: 200px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para separar los .row a los lados de la pantalla */
+}
+
+h2{
+    padding-left: 2vh;
+}
+
+.bi bi-geo-alt-fill{
+    color: black;
+}
+
+
+p{
+    font-size: 1.5vh;
+    padding-left: 2vh;
+}
+
