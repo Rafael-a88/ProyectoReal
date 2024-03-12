@@ -631,7 +631,7 @@ nav ul li ul li {
 
 
     body {
-        min-height: 370vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+        min-height: 310vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
     }
 
      .header-container {
