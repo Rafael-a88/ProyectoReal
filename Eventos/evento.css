@@ -3,6 +3,8 @@ body{
     height: 100vh; /* Establece la altura del body al 100% del viewport height */   
     margin: 0; /* Elimina el margen predeterminado del body */   
     padding: 0; /* Elimina el relleno predeterminado del body */
+
+    
 }
 
 
@@ -125,3 +127,200 @@ a{
    
 }
 
+/* EL RESPONSIVE */
+
+/* Para pantalla de 16 a 27 pulgadas */
+
+@media only screen and (max-width: 1540px) {
+
+    body {
+        background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3vh;
+        background-color: rgba(90, 144, 114, 0.4);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 115, 0.855);
+    }
+    
+    .header-container p {
+        margin-left: 5%;
+    }
+    
+    .titulo {
+        text-align: center;
+        margin: 5vh;
+    }
+    
+    h3 {
+        margin-top: -20px;
+    }
+    
+    .timecode {
+        font-size: 6vh;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    
+    .timecode::after {
+        content: "Code";
+        color: greenyellow;
+    }
+    
+    .mundo {
+        color: greenyellow;
+    }
+    
+    .titulo2 {
+        text-align: center;
+        margin: 5vh;
+    }
+    
+    .timecode2 {
+        font-size: 6vh;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    
+    .timecode2::after {
+        content: "Code";
+        color: greenyellow;
+    }
+    
+    .mundo2 {
+        color: greenyellow;
+    }
+    
+    .mititulo {
+        font-size: 6vh;
+        color: aliceblue;
+        margin-top: 1em;
+        margin-right: 2vh;
+        letter-spacing: 20px;
+    }
+    
+    .principal {
+        position: relative;
+        margin: 2vh 5% 2vh 5%;
+        background-color: rgba(180, 180, 181, 0.5);
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 5vh;
+        margin: 20px;
+        text-align: justify;
+    }
+    
+    p {
+        font-size: 2.5vh;
+        margin: 20px;
+        text-align: justify;
+    }
+    
+    .Eventos {
+        color: aliceblue;
+        font-size: 4vh;
+        margin: 5vh;
+    }
+    
+    iframe {
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    a {
+        position: relative;
+        margin: 2vh auto;
+        display: block;
+    }
+    
+
+
+}
+
+
+/* Para Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+      body {
+        background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
+        height: auto;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+
+        margin: 1vh;
+        align-items: center;   
+    }
+
+    .header-container p {
+        margin: 10px 0;
+    }
+
+    .titulo, .titulo2 {
+        margin: 5vh 0;
+    }
+
+    .timecode, .timecode2 {
+        font-size: 4vh;
+    }
+
+    .principal {
+        width: 40vh;
+        margin: 2vh 2vh;
+        flex-direction: column;
+        
+    }
+
+    h1, p {
+        font-size: 4vh;
+    }
+
+    .Eventos {
+        text-align: center;
+        font-size: 3vh;
+        
+        padding-right: 15vh;
+    }
+
+    iframe {
+        margin-top: 10%;
+
+        right: 44%;
+
+        height: 00%;
+        width: 90%;
+    }
+
+    a {
+        margin: 5vh auto;
+    }
+
+    .button{
+
+        display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    }
+    
+}
+
+
+/* Para movil */
+
+@media only screen and (max-width: 767px) {
+    
+}
