@@ -87,7 +87,7 @@ h3{
     position: relative;
     left: 20vh;
     top: 1vh;
-    background-color: rgba(180, 180, 181,0.5);
+    background-color: rgba(223, 223, 223, 0.664);
     width: 30%;
     border-radius: 10px;
 }
@@ -139,7 +139,7 @@ a{
 
 /* Para pantalla de 16 a 27 pulgadas */
 
-@media only screen and (max-width: 1540px) {
+@media only screen and (max-width: 1800px) {
 
     body {
         background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
@@ -217,8 +217,8 @@ a{
     .principal {
         position: relative;
         margin: 2vh 5% 2vh 5%;
-        background-color: rgba(180, 180, 181, 0.5);
         border-radius: 10px;
+        left: 1vh;
     }
     
     h1 {
@@ -243,6 +243,8 @@ a{
         position: relative;
         width: 100%;
         border-radius: 15px;
+        margin-left: 10vh;
+        margin-top: -12vh;
     }
     
     a {
@@ -262,14 +264,16 @@ a{
 
       body {
         background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
-        height: auto;
+        min-height: 190vh;
+        
+
     }
 
     .header-container {
+        display: flex;
         flex-direction: column;
         text-align: center;
-
-        margin: 1vh;
+        margin: 2vh;
         align-items: center;   
     }
 
@@ -286,43 +290,37 @@ a{
     }
 
     .principal {
-        width: 40vh;
-        margin: 2vh 2vh;
+        position: relative;
+        width: 49vh;
+        margin: 2vh;
         flex-direction: column;
+        left: 10%;
         
     }
 
     h1, p {
-        font-size: 4vh;
+        font-size: 3vh;
     }
 
     .Eventos {
         text-align: center;
         font-size: 3vh;
-        
-        padding-right: 15vh;
+        margin-right: 15vh;
+        left: 60px;
     }
 
-    iframe {
-        margin-top: 10%;
-
-        right: 44%;
-
-        height: 00%;
-        width: 90%;
+     
+    .video{
+        position: relative;
+        margin-left: -65%;
+        margin-top: 250px;
+        width: 1585px;
+        height: 400px;
+       
     }
-
-    a {
-        margin: 5vh auto;
-    }
-
-    .button{
-
-        display: flex;
-    justify-content: space-between;
-    align-items: center;  
-
-    }
+    
+   
+    
     
 }
 
@@ -333,9 +331,10 @@ a{
     
     body {
         background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
-        height: auto;
-        margin: 0;
-        padding: 0;
+        min-height: 190vh;
+        width: auto;
+        
+       
     }
     
     .header-container {
@@ -388,7 +387,6 @@ a{
     .principal {
         position: relative;
         left: 2vh;
-        background-color: rgba(180, 180, 181, 0.5);
         border-radius: 10px;
         width: 80%; /* Ajusta el ancho según tus necesidades */
     }
@@ -405,6 +403,7 @@ a{
         text-align: justify;
     }
     
+
     .Eventos {
         color: aliceblue;
         font-size: 3vh;
@@ -412,20 +411,23 @@ a{
         text-align: center;
     }
     
-    iframe {
-       
+    .video{
         position: relative;
-        width: 100%;
-        border-radius: 15px;
-        left: 2vh;
-        top: 50%
-        
+        margin-left: -65%;
+        margin-top: 200px;
+        width: 745px;
+        height: 200px;
+       
     }
     
-    a {
+  
+    .inicio {
         position: relative;
-        margin: 2vh auto;
-        display: block;
+        left: -3vh;
+        
     }
+   
 
+   
 }
+
