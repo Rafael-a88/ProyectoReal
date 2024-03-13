@@ -300,102 +300,106 @@ h4{
     
    }
 
+
+
 /*Para tablet*/
 
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     
-        body {
-            min-height: 150vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */   
-               
-        }
-    
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center; 
-            flex-wrap:wrap; 
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
-        
-        }    
-        .timecode {
-        font-size: 40px;
-        margin-left: 0px;
-        }
-        
-        .timecode2{
-        font-size: 40px; 
-        margin-right:  70%;
-        margin-left: 60%;
-        }
+    body {
+        min-height: 150vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */   
+        width: 85%;   
+    }
 
-        .mundo {
-        font-size: 13px;
-        margin-left: 8vh;
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        width:105%;
+    }    
+
+    .timecode {
+    font-size: 50px;
+    margin-left: 0px;
+    }
+    
+    .timecode2{
+    font-size: 50px; 
+    margin-left:-34vh;
+    
+    }
+
+    .mundo {
+    font-size: 15px;
+    margin-left: 1vh;
+    white-space: nowrap;
+    }
+
+    .mundo2 {
+        font-size: 15px;
+        margin-left: -33vh;
         white-space: nowrap;
-        }
-        .mundo2 {
-            font-size: 13px;
-            margin-left: 100px;
-            white-space: nowrap;
-        }
+    }
 
-        .titulo{
-        margin-left: 20px;
-        }
-        
-        .mititulo{
+    .titulo{
+    margin-left: 10px;
+    }
+    
+    .mititulo{
 
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 3.5vh;
-        margin-right: 30%;
-        }
+    margin-top: 4%;
+    margin-bottom: 40px;
+    font-size: 3.5vh;
+    margin-right: 16%;
+    }
 
-        .titulo2 {
-        /* Ajusta el margen izquierdo */
-        font-size: 20px;
-        margin-left: 30vh;
-        margin-right: 50px;
-        }
+    .titulo2 {
+    /* Ajusta el margen izquierdo */
+    font-size: 20px;
+    margin-left: 40vh;
+    margin-right: 50px;
+    }
+
+    .Cursos {
+        margin-top: 5vh; /* Ajusta el margen superior */
+        margin-left: 40%;
+    }
+    
+    .grid-container {
+    position: static;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10%; /* Reduce el espacio entre los elementos */
+    row-gap: 50%;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-right: 0;
+    margin-left:12vh;
+    }
+
     
         
-        .grid-container {
-        position: static;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 5%; /* Reduce el espacio entre los elementos */
-        row-gap: 50%;
-        justify-content: center;
-        margin-top: 5vh;
-        margin-right: 0;
-        margin-left:3vh;
-        }
-    
+    .imagen-container {
+    background-color: rgba(255, 255, 251, 0.799);
+    margin-top: 3vh;
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center; 
+    }
         
-            
-        .imagen-container {
-        background-color: rgba(255, 255, 251, 0.799);
-        margin-top: 3vh;
-        height: 250px;
-        width: 350px;
-        border-radius: 15px;
-        text-align: center; 
-        }
-            
-        .imagen-container:hover{
-        transform: scale(1.10);
-        border-radius: 50px;
-        transition: all .8s ease-in-out;
-        box-shadow: 0px 0px 15px 15px #ffffff;
-        -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
-        }
-        .inicio{
-            position: relative;
-            left: 48.5%;
-            margin-top: 40vh;
-            margin-right:30%;
-        }
-            
-            
-  
+    .imagen-container:hover{
+    transform: scale(1.10);
+    border-radius: 50px;
+    transition: all .8s ease-in-out;
+    box-shadow: 0px 0px 15px 15px #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 10px #38cf33;
+    }
+    .inicio{
+        position: relative;
+        left: 51.5%;
+        margin-top: 30vh;
+        
+    }
+        
+   
 }
