@@ -42,7 +42,7 @@ h3{
 
 .timecode::after {
     content: "Code"; /* Agrega el texto "Code" después de "Time" */
-    color: greenyellow; /* Color verde para "Code" */
+    color: greenyellow; /* Color verde para "Code" a */
 }
 
 .mundo{
@@ -115,7 +115,9 @@ p{
 
 .video{
     position: relative;
-    margin-left: 30%;
+
+    margin-left: 40%;
+
     margin-top: -390px;
     width: 1100px;
     height: 350px;
@@ -148,7 +150,7 @@ p{
 
     body {
         background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
-        height: 100vh;
+        min-height: 160vh;
         margin: 0;
         padding: 0;
     }
@@ -266,15 +268,15 @@ p{
 
     .inicio{
 
-
-        
+        position: relative;
+        margin-right: 7vh;
     }
 
 }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-/* Para Tablet */
+/* Para Tablet (Ipad Mini)*/
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -307,10 +309,10 @@ p{
 
     .principal {
         position: relative;
-        width: 49vh;
-        margin: 2vh;
+        width: 32em;
+        margin: 2em;
         flex-direction: column;
-        left: 10%;
+        left: 11%;
         
     }
 
@@ -321,28 +323,32 @@ p{
     .Eventos {
         text-align: center;
         font-size: 3vh;
-        margin-right: 15vh;
+        margin-right: 17vh;
         left: 60px;
     }
 
      
     .video{
         position: relative;
-        margin-left: -65%;
-        margin-top: 250px;
-        width: 1585px;
+        margin-left: -31em;
+        margin-top: 10em;
+        width: 1580px;
         height: 400px;
        
     }
     
-   
+   .inicio{
+
+    margin-bottom: 6em;
+
+   }
     
     
 }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-/* Para movil */
+/* Para movil (Samsun Galaxy A12) */
 
 @media only screen and (max-width: 767px) {
     
@@ -350,8 +356,7 @@ p{
         background: linear-gradient(black, rgb(0, 0, 0), rgb(3, 88, 3));
         min-height: 190vh;
         width: auto;
-        
-       
+    
     }
     
     .header-container {
@@ -403,7 +408,7 @@ p{
     
     .principal {
         position: relative;
-        left: 2vh;
+        left: 3%;
         border-radius: 10px;
         width: 80%; /* Ajusta el ancho según tus necesidades */
     }
@@ -430,21 +435,21 @@ p{
     
     .video{
         position: relative;
-        margin-left: -65%;
-        margin-top: 200px;
-        width: 745px;
-        height: 200px;
+        margin-left: -72%;
+        margin-top: 10em;
+        width: 725px;
+        height: 180px;
        
     }
     
   
     .inicio {
         position: relative;
-        left: -3vh;
+        margin-left: -2em;
         
+        margin-bottom: 5em;
     }
    
-
-   
 }
+
 
