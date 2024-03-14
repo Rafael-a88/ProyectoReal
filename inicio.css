@@ -631,10 +631,10 @@ nav ul li ul li {
 
 
     body {
-        min-height: 310vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+        min-height: 360vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
     }
 
-     .header-container {
+    .header-container {
   
         width: 90%;
         height: 47vh;
@@ -685,7 +685,7 @@ nav ul li ul li {
     }
 
     .header-container {
-            margin-left: 2vh; /* Ajusta el margen izquierdo */
+            margin-left: 3vh; /* Ajusta el margen izquierdo */
             margin-right: 2vh; /* Ajusta el margen derecho */
         }
 
