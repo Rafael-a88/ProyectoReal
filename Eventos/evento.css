@@ -42,7 +42,7 @@ h3{
 
 .timecode::after {
     content: "Code"; /* Agrega el texto "Code" después de "Time" */
-    color: greenyellow; /* Color verde para "Code" */
+    color: greenyellow; /* Color verde para "Code" a */
 }
 
 .mundo{
