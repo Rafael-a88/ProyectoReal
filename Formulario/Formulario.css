@@ -170,6 +170,7 @@ input, textarea {
 	text-align: right;
 }
 
+/* MOVIL Xiaomi MI 11 */
 @media only screen and (max-width: 767px) {
    
 	.timecode {
@@ -235,6 +236,7 @@ input, textarea {
 	
 	}
 
+	/*Tablet IPad MINI*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
    
 
@@ -298,6 +300,7 @@ input, textarea {
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
    
 
+	
 	.form {
 		background: #12141d;
 		padding: 40px;
@@ -357,7 +360,9 @@ input, textarea {
  
 @media only screen and (min-width: 1440px) {
    
-
+body{
+	min-height: 110vh;
+}
 .form {
 	background: #12141d;
 	padding: 40px;
