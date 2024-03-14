@@ -70,7 +70,7 @@ nav ul li ul{
    visibility: hidden;
     opacity: 0;
     z-index: 1;
-    background-color: #11751e;
+    background-color: #14631f;
 
 }
 
@@ -93,7 +93,7 @@ nav ul li ul::before{
     left: 60px;
     border-width: 40px;
     border-style: solid;  
-    border-color: transparent transparent #11751e transparent;
+    border-color: transparent transparent #13721f transparent;
 }
 
 nav ul li ul li a{
@@ -625,16 +625,16 @@ nav ul li ul li {
 }
 
 
-/* Para movil */
+/* Para movil Xiami MI11*/
 
 @media only screen and (max-width: 767px) {
 
 
     body {
-        min-height: 310vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
+        min-height: 390vh; /* Ajusta la altura mínima del body al 100% del alto de la pantalla */
     }
 
-     .header-container {
+    .header-container {
   
         width: 90%;
         height: 47vh;
@@ -643,7 +643,7 @@ nav ul li ul li {
     .titulo{
         position: absolute;
         margin-top: -250px;
-        left: 120px;   
+        left: 70px;   
     }
 
 
@@ -673,8 +673,9 @@ nav ul li ul li {
         padding: 10px; /* Ajusta el relleno para reducir el espacio entre elementos */
         margin: 10px 0; /* Aplica un margen vertical de 10px entre los elementos */
         font-size: 18px; /* Tamaño de fuente ajustado para mejor legibilidad */
-        margin-left: 150px;
+        margin-left: 100px;
     }
+  
     nav ul li:first-child {
         margin-top: 30px; /* Ajusta el margen superior solo para el primer elemento */
     }
@@ -685,7 +686,7 @@ nav ul li ul li {
     }
 
     .header-container {
-            margin-left: 2vh; /* Ajusta el margen izquierdo */
+            margin-left: 3vh; /* Ajusta el margen izquierdo */
             margin-right: 2vh; /* Ajusta el margen derecho */
         }
 
@@ -699,13 +700,11 @@ nav ul li ul li {
     }
 
     .Cursos {
-        margin-top: 15vh; /* Ajusta el margen superior */
-        margin-left: 25%;
+        margin-top: 20vh; /* Ajusta el margen superior */
+        margin-left: 15%;
     }
 
-    .footer-content {
-    margin-left: -90px;
-    }
+   
 
     #myFooter {
     display: none; /* Inicialmente oculto */
@@ -728,9 +727,9 @@ nav ul li ul li {
      border: 1px solid #fff;
      position: relative;
      margin-top: 110px; /* Ajusta el margen superior según sea necesario */
-     margin-left: 30%; /* Ajusta el margen izquierdo según sea necesario */
+     margin-left: 25%; /* Ajusta el margen izquierdo según sea necesario */
      margin-right: -90px;
-     max-width: 330px; /* Asegura que el elemento no se desborde */
+     max-width: 220px; /* Asegura que el elemento no se desborde */
     }
  
     .search__input {
@@ -758,8 +757,8 @@ nav ul li ul li {
     .imagen-container {
     background-color: rgba(255, 255, 251, 0.799);
     margin-top: 3vh;
-    height: 250px;
-    width: 350px;
+    height: 240px;
+    width: 300px;
     border-radius: 15px;
     text-align: center;
     
@@ -783,11 +782,18 @@ nav ul li ul li {
 
     .suscripcion {
         margin-right: 0; /* Elimina el margen derecho */
-        margin-top: 5vh; /* Ajusta el margen superior según sea necesario */
+        margin-top: 2vh; /* Ajusta el margen superior según sea necesario */
     }
 
+    .newsletter{
+        margin-left: 5px;
+        font-size: 3vh;
+    }
+
+    #emailInput
+ 
     input{
-        margin-right: 9vh;
+        margin-right: 12vh;
     }
 
     .titulo2 {
@@ -795,13 +801,18 @@ nav ul li ul li {
     }
 
     .timecode2{
-        margin-left: 20%;
+        margin-left: 10%;
+    }
+
+    .desbloquea{
+        font-size: 1.7vh;
+        margin-left: -1vh;
     }
 
     .bi-geo-alt-fill,
     .bi-telephone,
     .bi-envelope-at-fill {
-    margin-left: 25%; /* Ajusta el margen izquierdo para desplazar hacia la derecha */
+    margin-left: 15%; /* Ajusta el margen izquierdo para desplazar hacia la derecha */
     }
 
 
@@ -819,8 +830,8 @@ nav ul li ul li {
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0,5);
         position: absolute;
         border: 1px solid black;
-        top: 160px;
-        left: 75px;
+        top: 150px;
+        left: 25px;
         padding: 14px 0;
        visibility: hidden;
         opacity: 0;
@@ -832,8 +843,8 @@ nav ul li ul li {
     nav ul li:hover ul{
         visibility: visible ;
         opacity: 1;
-        top: 160px;
-        left: 75px;
+        top: 150px;
+        left: 25px;
         
     }
 }
